@@ -1,0 +1,44 @@
+<!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js --> 
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded artoolkit='sourceType: webcam;' arjs='patternRatio:0.9;'>
+		<!-- <a-marker-camera preset='kanji'>--> 
+		<a-marker-camera type="pattern" url="https://lp.se-ed.com/storage/arjs/pattern-QRtoAR.patt">
+			<!-- <a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0 0" segments-height="53">
+				 <a-animation attribute="scale"
+					  dur="5000"
+					  from= "1 1 1"
+					  to="2 2 2"
+					  direction='alternate-reverse'
+					  easing= "ease-in-out-circ"     
+					  repeat="indefinite"></a-animation>
+			 </a-sphere>
+			 <a-entity
+					position="0 0 0"
+					scale="0.5 0.5 0.5"
+					obj-model="obj: url(https://lp.se-ed.com/storage/arjs/Camera.obj); mtl: url(https://lp.se-ed.com/storage/arjs/Camera.mtl)">
+			</a-entity> -->
+			<a-entity
+					position="0 0 0"
+					scale="0.07 0.07 0.07"
+					gltf-model="https://lp.se-ed.com/storage/arjs/Mosque.gltf"
+					>
+			</a-entity>
+			 <!-- <a-entity
+					position="0 0 0"
+					scale="0.05 0.05 0.05"
+					rotate="180"
+					gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+					>
+			</a-entity>
+			
+			<a-entity position="0 0 0"
+					scale="0.5 0.5 0.5"
+					obj-model="obj: url(https://rishavjayswal.github.io/augmented-reality/resources/couch.obj); 
+					mtl: url(https://rishavjayswal.github.io/augmented-reality/resources/couch.mtl)">
+			</a-entity>-->
+		</a-marker-camera>
+	</a-scene>
+</body>
