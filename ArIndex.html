@@ -3,10 +3,11 @@
 <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
 <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
 <body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded artoolkit='sourceType: webcam;' arjs='patternRatio:0.9;'>
-		<!-- <a-marker-camera preset='kanji'>--> 
-		<a-marker-camera type="pattern" url="https://lp.se-ed.com/storage/arjs/pattern-QRtoAR.patt">
-			<!-- <a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0 0" segments-height="53">
+	<!-- <a-scene embedded artoolkit='sourceType: webcam;' arjs='patternRatio:0.9;'>-->
+	<a-scene embedded artoolkit='sourceType: webcam;'>
+		<a-marker-camera preset='kanji'>
+		<!-- <a-marker-camera type="pattern" url="https://lp.se-ed.com/storage/arjs/pattern-QRtoAR.patt">
+			<a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0 0" segments-height="53">
 				 <a-animation attribute="scale"
 					  dur="5000"
 					  from= "1 1 1"
